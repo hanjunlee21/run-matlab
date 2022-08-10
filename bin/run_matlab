@@ -64,7 +64,7 @@ class run_matlab(object):
         with open(os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/install.sh', 'w') as file:
             file.write(filedata)
         
-        subprocess.call(['sh', os.path.abspath(args.installation_dir) + 'run_matlab-v.' + __version__ + '/run_matlab/install.sh'])
+        subprocess.call(['sh', os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/install.sh'])
         
     def run(self, argv):
         parser = commands.run_parser()
