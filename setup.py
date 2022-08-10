@@ -21,7 +21,7 @@ setup(
   long_description_content_type='text/markdown',
   author = 'Hanjun Lee',
   author_email = 'hanjun@mit.edu',
-  url = 'https://github.com/hanjunlee21/run-time',
+  url = 'https://github.com/hanjunlee21/run_matlab',
   download_url = 'https://github.com/hanjunlee21/run_matlab/archive/refs/tags/v.' + __version__ + '.tar.gz',
   keywords = ['matlab', 'matlab-compiler', 'matlab-runtime'],   
   install_requires=[
