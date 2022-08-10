@@ -1,6 +1,7 @@
 import argparse
 import textwrap
 import sys
+import os
 
 def run_matlab_parser():
     usage = '''\
@@ -33,7 +34,7 @@ def install_parser():
         '-d',
         dest='installation_dir',
         type=str,
-        default='$HOME/run_matlab',
+        default=os.path.expanduser('~')+'/run_matlab',
         help='Directory wherein the MATLAB compiler runtime (MCR) will be installed.')
 
     parser.add_argument(
@@ -79,7 +80,7 @@ def run_parser():
         '-d',
         dest='installation_dir',
         type=str,
-        default='$HOME/run-matlab',
+        default=os.path.expanduser('~')+'/run_matlab',
         help='Directory wherein the MATLAB compiler runtime (MCR) was installed.')
         
     parser.add_argument(

@@ -56,12 +56,12 @@ class run_matlab(object):
         subprocess.call(['tar', '-C', os.path.abspath(args.installation_dir), '-x', '-v', '-z', '-f', tar_gz_path])
         subprocess.call(['rm', tar_gz_path])
         
-        with open(os.path.abspath(args.installation_dir) + 'run_matlab-v.' + __version__ + '/run_matlab/install.sh', 'r') as file:
+        with open(os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/install.sh', 'r') as file:
             filedata = file.read()
         filedata = filedata.replace('TOREPLACE_INSTALLATION_DIR', os.path.abspath(args.installation_dir))
         filedata = filedata.replace('TOREPLACE_MATLAB_VER', args.matlab_version)
         filedata = filedata.replace('TOREPLACE_RUNTIME_VER', args.runtime_version)
-        with open(os.path.abspath(args.installation_dir) + 'run_matlab-v.' + __version__ + '/run_matlab/install.sh', 'w') as file:
+        with open(os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/install.sh', 'w') as file:
             file.write(filedata)
         
         subprocess.call(['sh', os.path.abspath(args.installation_dir) + 'run_matlab-v.' + __version__ + '/run_matlab/install.sh'])
@@ -71,7 +71,7 @@ class run_matlab(object):
 
         args = parser.parse_args(argv[2:])
         
-        with open(os.path.abspath(args.installation_dir) + 'run_matlab-v.' + __version__ + '/run_matlab/run.sh', 'r') as file:
+        with open(os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/run.sh', 'r') as file:
             filedata = file.read()
         filedata = filedata.replace('TOREPLACE_INSTALLATION_DIR', os.path.abspath(args.installation_dir))
         filedata = filedata.replace('TOREPLACE_MATLAB_VER', args.matlab_version)
@@ -80,7 +80,7 @@ class run_matlab(object):
         filedata = filedata.replace('TOREPLACE_FUNCTION_NAME', args.function_name)
         #filedata = filedata.replace('TOREPLACE_FUNCTION_ARGS', args.function_args)
         args.function_args
-        with open(os.path.abspath(args.installation_dir) + 'run_matlab-v.' + __version__ + '/run_matlab/run.sh', 'w') as file:
+        with open(os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/run.sh', 'w') as file:
             file.write(filedata)
             
 if __name__ == '__main__':
