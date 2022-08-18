@@ -79,8 +79,8 @@ class run_matlab(object):
         filedata = filedata.replace('TOREPLACE_RUNTIME_VER', args.runtime_version)
         filedata = filedata.replace('TOREPLACE_FUNCTION_DIR', args.function_dir)
         filedata = filedata.replace('TOREPLACE_FUNCTION_NAME', args.function_name)
-        #filedata = filedata.replace('TOREPLACE_FUNCTION_ARGS', args.function_args)
-        args.function_args
+        filedata = filedata.replace('TOREPLACE_FUNCTION_ARGS', args.function_args)
+        
         with open(os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/run_task.sh', 'w') as file:
             file.write(filedata)
             
