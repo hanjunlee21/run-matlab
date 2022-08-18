@@ -8,6 +8,8 @@ functiondir="TOREPLACE_FUNCTION_DIR"
 functionname="TOREPLACE_FUNCTION_NAME"
 functionargs="TOREPLACE_FUNCTION_ARGS"
 
+echo $functionargs
+
 libmwmclmcrrt=v${runtimever::${#runtimever}-2}${runtimever:(-1)}
 MCRver=MCR_${matlabver}_glnxa64
 
