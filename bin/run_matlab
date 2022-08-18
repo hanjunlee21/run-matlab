@@ -64,7 +64,7 @@ class run_matlab(object):
         with open(os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/install_task.sh', 'w') as file:
             file.write(filedata)
         
-        subprocess.call(['sh', os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/install_task.sh'])
+        subprocess.call(['bash', os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/install_task.sh'])
         subprocess.call(['rm', os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/install_task.sh'])
         
     def run(self, argv):
@@ -84,7 +84,7 @@ class run_matlab(object):
         with open(os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/run_task.sh', 'w') as file:
             file.write(filedata)
             
-        subprocess.call(['sh', os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/run_task.sh'])
+        subprocess.call(['bash', os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/run_task.sh'])
         subprocess.call(['rm', os.path.abspath(args.installation_dir) + '/run_matlab-v.' + __version__ + '/run_matlab/run_task.sh'])
             
 if __name__ == '__main__':
