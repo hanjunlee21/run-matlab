@@ -37,7 +37,7 @@ Installation of the MATLAB compiler runtime (MCR)
 optional arguments:
   -h, --help           show this help message and exit
   -d INSTALLATION_DIR  Directory wherein the MATLAB compiler runtime (MCR)
-                       will be installed. (default: /home/hanjun/run_matlab)
+                       will be installed. (default: $HOME/run_matlab)
   -v MATLAB_VERSION    Number of threads to use. (default: R2013b)
   -r RUNTIME_VERSION   Number of repeats to perform. (default: 8.2)
 ```
@@ -78,7 +78,7 @@ positional arguments:
 optional arguments:
   -h, --help           show this help message and exit
   -d INSTALLATION_DIR  Directory wherein the MATLAB compiler runtime (MCR) was
-                       installed. (default: /home/hanjun/run_matlab)
+                       installed. (default: $HOME/run_matlab)
   -v MATLAB_VERSION    Number of threads to use. (default: R2013b)
   -r RUNTIME_VERSION   Number of repeats to perform. (default: 8.2)
 ```
