@@ -11,7 +11,7 @@ functionargs="TOREPLACE_FUNCTION_ARGS"
 libmwmclmcrrt=v${runtimever::${#runtimever}-2}${runtimever:(-1)}
 MCRver=MCR_${matlabver}_glnxa64
 
-chmod u+x ${functiondir}/files/bin/run_${functionname}.sh
-chmod u+x ${functiondir}/files/bin/${functionname}
-${functiondir}/files/bin/./run_${functionname}.sh ${installationdir}/$MCRver/$libmwmclmcrrt $functionargs
+chmod u+x ${functiondir}/run_${functionname}.sh
+chmod u+x ${functiondir}/${functionname}
+${functiondir}/./run_${functionname}.sh ${installationdir}/$MCRver/$libmwmclmcrrt $functionargs
 
