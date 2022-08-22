@@ -2,6 +2,8 @@
 **Command Line MATLAB Function Caller with Automatic MATLAB Compiler Runtime (MCR) Installation**
 
 [![PyPI version](https://badge.fury.io/py/run_matlab.svg)](https://badge.fury.io/py/run_matlab)
+[![DOI](https://zenodo.org/badge/522426883.svg)](https://zenodo.org/badge/latestdoi/522426883)
+<br/>
 
 # Installation
 ```shell
