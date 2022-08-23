@@ -42,14 +42,14 @@ def install_parser():
         dest='matlab_version',
         type=str,
         default='R2013b',
-        help='Number of threads to use.')
+        help='MATLAB version.')
     
     parser.add_argument(
         '-r',
         dest='runtime_version',
         type=str,
         default='8.2',
-        help='Number of repeats to perform.')
+        help='MATLAB Compiler Runtime version.')
 
     return parser
       
@@ -88,14 +88,14 @@ def run_parser():
         dest='matlab_version',
         type=str,
         default='R2013b',
-        help='Number of threads to use.')
+        help='MATLAB version.')
     
     parser.add_argument(
         '-r',
         dest='runtime_version',
         type=str,
         default='8.2',
-        help='Number of repeats to perform.')
+        help='MATLAB Compiler Runtime version.')
 
     return parser
 
